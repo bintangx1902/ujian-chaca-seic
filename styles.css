@@ -1,0 +1,394 @@
+.display-4 {
+	font-weight: 300;
+	font-family: 'Derpache', sans-serif;                                            
+}
+
+.box {
+	font-size: 45px;
+	font-weight: bold;
+	opacity: 0;
+	position: absolute;
+	padding-left: 5px;
+	width: 100%;
+	text-align: left;
+	font-family: century;
+	color: #8D021F;
+}
+
+.haha {
+	font-size: 45px;
+	opacity: 100;
+	position: absolute;
+	padding-right: 5px;
+	width: 100%;
+	text-align: right;
+	font-family: century;
+}
+
+#test {
+	margin-top: -20px;
+}
+
+.b1 {
+	animation: ani1 5s infinite;
+}
+
+.b2 {
+	animation: ani2 5s infinite;
+}
+
+@keyframes ani1 {
+	0%{
+		opacity: 0;
+	}
+	25%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0;
+	}
+}
+
+@keyframes ani2 {
+	50%{
+		opacity: 0;
+	}
+	75%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+.bg-image::before {
+	content: "ABOUT ME";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	font-family: "century";
+}
+
+.bg-image {
+	position: relative;
+	background-image: url(assets/4.jpeg);
+	min-height: 400px;
+	background-size: cover;
+	background-position: bottom;
+	color: white;
+}
+.desc{
+	font-family: Constantia;
+	font-size: 15px;
+}
+.overlay {
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+	width: 100%;
+	height: 100%;
+	bottom: -100%;
+}
+.foto-overlay:hover .overlay {
+	bottom: 0;
+}
+
+.foto-overlay img {
+	transition: 0.5s;
+}
+
+.foto-overlay:hover img {
+	transform: scale(1.5);
+}
+
+.foto-overlay {
+	position: relative;
+	overflow: hidden;
+}
+
+.bg-image::before {
+	content: "ABOUT ME";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	font-family: "century";
+}
+
+.bg-hobb::before {
+	content: " MY HOBBIES";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	font-family: "century";
+}
+.bg-hobb {
+	position: relative;
+	background-image: url(assets/2.jpg);
+	min-height: 400px;
+	background-size: cover;
+	background-position: bottom;
+	color: white;
+}
+.bg-gal::before {
+	content: "MY GALLERY";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	font-family: "century";
+}
+
+.bg-gal {
+	position: relative;
+	background-image: url(assets/34.jpg);
+	min-height: 400px;
+	background-size: cover;
+	background-position: bottom;
+	color: white;
+}
+.desc{
+	font-family: Constantia;
+	font-size: 15px;
+}
+
+.title{
+	font-family: Constantia;
+	font-size: 15px;
+}
+
+/*education part*/
+
+.education{
+	color: Black;
+	font-weight: 700;
+	margin-top: 25px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	line-height: 23px;
+}
+
+.education span{
+	color: #8D021F;
+}
+
+.process-wrapper {
+	margin:auto;
+	max-width:1080px;
+}
+
+#progress-bar-container {
+	position:relative;
+	width:90%;
+	margin:auto;
+	height:100px;
+	margin-top:65px;
+}
+
+#progress-bar-container ul {
+	padding:0;
+	margin:0;
+	padding-top:15px;
+	z-index:9999;
+	position:absolute;
+	width:100%;
+	margin-top:-40px
+}
+
+#progress-bar-container li:before {
+	content:" ";
+	display:block;
+	margin:auto;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	border:solid 2px #aaa;
+	transition:all ease 0.3s;
+
+}
+
+#progress-bar-container li.active:before, #progress-bar-container li:hover:before {
+	border:solid 2px #fff;
+
+	background: linear-gradient(to right, #660000 0%,#fff 100%); 
+}
+
+#progress-bar-container li {
+	list-style:none;
+	float:left;
+	width:20%;
+	text-align:center;
+	color:#aaa;
+	text-transform:uppercase;
+	font-size:11px;
+	cursor:pointer;
+	font-weight:700;
+	transition:all ease 0.2s;
+	vertical-align:bottom;
+	height:60px;
+	position:relative;
+}
+
+#progress-bar-container li .step-inner {
+	position:absolute;
+	width:100%;
+	bottom:0;
+	font-size: 14px;
+}
+
+#progress-bar-container li.active, #progress-bar-container li:hover {
+	color:#444;
+}
+
+#progress-bar-container li:hover:after {
+	background:#555;
+}
+
+#progress-bar-container li.active:after {
+	background:#207893;
+}
+
+#progress-content-section {
+	width:90%;
+	margin: auto;
+	background: #f3f3f3;
+	border-radius: 4px;
+}
+
+#progress-content-section .section-content {
+	padding:30px 40px;
+	text-align:center;
+}
+
+#progress-content-section .section-content h2 {
+	font-size:25px;
+	font-family: Monotype Corsiva;
+	color:#333;
+	letter-spacing:1px;
+}
+
+#progress-content-section .section-content p {
+	font-size:16px;
+	line-height:1.8em;
+	color:#777;;
+	font-family: century;
+}
+
+#progress-content-section .section-content h3 {
+	font-size:25px;
+	line-height:1.8em;
+	color:#777;;
+	font-family: century;
+}
+
+#progress-content-section .section-content {
+	display:none;
+	animation: FadeInUp 700ms ease 1;
+	animation-fill-mode:forwards;
+	transform:translateY(15px);
+	opacity:0;
+}
+
+#progress-content-section .section-content.active {
+	display:block;
+}
+
+@keyframes FadeInUp {
+	0% {
+		transform:translateY(15px);
+		opacity:0;
+	}
+	
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
+}
+
+/*gallery*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 90px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.oo{
+	font-family: Constantia;
+	font-size: 25px;
+	text-align: center;
+}
+
+/*organization*/
+.org{
+	color: Black;
+	font-weight: 700;
+	margin-top: 25px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	line-height: 23px;
+}
+
+.org span{
+	color: #8D021F;
+}
